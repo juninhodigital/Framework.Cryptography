@@ -4,7 +4,7 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <Authors>Jose Carlos de Jesus Junior</Authors>
     <PackageId>Framework.Services.Cryptography</PackageId>
-    <Version>1.0.3</Version>
+    <Version>1.0.4</Version>
     <Description>It provides cryptography and  web config security using ProtectedConfigurationProvider/TripleDESCryptoServiceProvider</Description>
     <Copyright>Copyright 2018</Copyright>
     <PackageLicenseUrl>https://github.com/juninhodigital/Framework.Cryptography/blob/master/LICENSE</PackageLicenseUrl>
@@ -15,6 +15,10 @@
     <PackageTags>Cryptography, Security, ProtectedConfigurationProvider, TripleDESCryptoServiceProvider</PackageTags>
     <NeutralLanguage>en-US</NeutralLanguage>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Framework.Cryptography.nuspec" />
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="System.Configuration.ConfigurationManager" Version="4.5.0" />
