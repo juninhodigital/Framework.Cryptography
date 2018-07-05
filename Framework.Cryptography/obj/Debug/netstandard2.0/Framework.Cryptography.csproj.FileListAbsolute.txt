@@ -1,9 +1,0 @@
-C:\Users\jjunior\Desktop\Framework\Services\Framework.Cryptography\Framework.Cryptography\bin\Debug\netstandard2.0\Framework.Cryptography.deps.json
-C:\Users\jjunior\Desktop\Framework\Services\Framework.Cryptography\Framework.Cryptography\bin\Debug\netstandard2.0\Framework.Cryptography.dll
-C:\Users\jjunior\Desktop\Framework\Services\Framework.Cryptography\Framework.Cryptography\bin\Debug\netstandard2.0\Framework.Cryptography.pdb
-C:\Users\jjunior\Desktop\Framework\Services\Framework.Cryptography\Framework.Cryptography\obj\Debug\netstandard2.0\Framework.Cryptography.csproj.CoreCompileInputs.cache
-C:\Users\jjunior\Desktop\Framework\Services\Framework.Cryptography\Framework.Cryptography\obj\Debug\netstandard2.0\Framework.Cryptography.AssemblyInfoInputs.cache
-C:\Users\jjunior\Desktop\Framework\Services\Framework.Cryptography\Framework.Cryptography\obj\Debug\netstandard2.0\Framework.Cryptography.AssemblyInfo.cs
-C:\Users\jjunior\Desktop\Framework\Services\Framework.Cryptography\Framework.Cryptography\obj\Debug\netstandard2.0\Framework.Cryptography.dll
-C:\Users\jjunior\Desktop\Framework\Services\Framework.Cryptography\Framework.Cryptography\obj\Debug\netstandard2.0\Framework.Cryptography.pdb
-C:\Users\jjunior\Desktop\Framework\Services\Framework.Cryptography\Framework.Cryptography\obj\Debug\netstandard2.0\Framework.Cryptography.csprojAssemblyReference.cache
