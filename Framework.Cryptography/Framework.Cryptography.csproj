@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Authors>Jose Carlos de Jesus Junior</Authors>
+    <PackageId>Framework.Services.Cryptography</PackageId>
+    <Version>1.0.2</Version>
+    <Description>It provides cryptography and  web config security using ProtectedConfigurationProvider/TripleDESCryptoServiceProvider</Description>
+    <Copyright>Copyright 2018</Copyright>
+    <PackageLicenseUrl>https://github.com/juninhodigital/Framework.Cryptography/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/juninhodigital/Framework.Core/blob/master/Icons/FS_IconSmall.png?raw=true</PackageProjectUrl>
+    <PackageIconUrl>https://github.com/juninhodigital/Framework.Cryptography</PackageIconUrl>
+    <RepositoryType>https://github.com/juninhodigital/Framework.Cryptography</RepositoryType>
+    <PackageReleaseNotes />
+    <PackageTags>Cryptography, Security, ProtectedConfigurationProvider, TripleDESCryptoServiceProvider</PackageTags>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="4.5.0" />
+  </ItemGroup>
+
+</Project>
