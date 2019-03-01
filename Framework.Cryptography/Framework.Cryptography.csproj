@@ -4,16 +4,25 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <Authors>Jose Carlos de Jesus Junior</Authors>
     <PackageId>Framework.Services.Cryptography</PackageId>
-    <Version>1.0.4</Version>
+    <Version>1.0.5</Version>
     <Description>It provides cryptography and  web config security using ProtectedConfigurationProvider/TripleDESCryptoServiceProvider</Description>
     <Copyright>Copyright 2018</Copyright>
     <PackageLicenseUrl>https://github.com/juninhodigital/Framework.Cryptography/blob/master/LICENSE</PackageLicenseUrl>
-    <PackageProjectUrl>https://github.com/juninhodigital/Framework.Core/blob/master/Icons/FS_IconSmall.png?raw=true</PackageProjectUrl>
-    <PackageIconUrl>https://github.com/juninhodigital/Framework.Cryptography</PackageIconUrl>
-    <RepositoryType>https://github.com/juninhodigital/Framework.Cryptography</RepositoryType>
+    <PackageProjectUrl>https://github.com/juninhodigital/Framework.Cryptography</PackageProjectUrl>
+    <PackageIconUrl>https://github.com/juninhodigital/Framework.Core/blob/master/Icons/FS_IconSmall.png?raw=true</PackageIconUrl>
+    <RepositoryType>Github</RepositoryType>
     <PackageReleaseNotes />
     <PackageTags>Cryptography, Security, ProtectedConfigurationProvider, TripleDESCryptoServiceProvider</PackageTags>
     <NeutralLanguage>en-US</NeutralLanguage>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Product>Framework.Services.Cryptography</Product>
+    <AssemblyVersion>1.0.2.0</AssemblyVersion>
+    <FileVersion>1.0.2.0</FileVersion>
+    <RepositoryUrl>https://github.com/juninhodigital/Framework.Cryptography</RepositoryUrl>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <Optimize>true</Optimize>
   </PropertyGroup>
 
   <ItemGroup>
