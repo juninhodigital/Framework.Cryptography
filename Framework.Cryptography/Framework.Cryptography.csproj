@@ -15,7 +15,7 @@
     <PackageTags>Cryptography, Security, ProtectedConfigurationProvider, TripleDESCryptoServiceProvider</PackageTags>
     <NeutralLanguage>en-US</NeutralLanguage>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Product>Framework.Services.Cryptography</Product>
+    <Product>Framework.Cryptography</Product>
     <AssemblyVersion>1.0.2.0</AssemblyVersion>
     <FileVersion>1.0.2.0</FileVersion>
     <RepositoryUrl>https://github.com/juninhodigital/Framework.Cryptography</RepositoryUrl>
