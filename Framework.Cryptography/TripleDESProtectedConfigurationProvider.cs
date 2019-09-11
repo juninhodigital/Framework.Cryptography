@@ -82,7 +82,8 @@ namespace Framework.Cryptography
         /// using the implementation provided by the cryptographic service provider (CSP).
         /// This class cannot be inherited.
         /// </summary>
-        internal string EncryptString(string encryptValue)        {
+        internal string EncryptString(string encryptValue)
+        {
 
             var valBytes = Encoding.Unicode.GetBytes(encryptValue);
 

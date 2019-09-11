@@ -4,7 +4,7 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <Authors>Jose Carlos de Jesus Junior</Authors>
     <PackageId>Framework.Services.Cryptography</PackageId>
-    <Version>1.0.5</Version>
+    <Version>1.0.6</Version>
     <Description>It provides cryptography and  web config security using ProtectedConfigurationProvider/TripleDESCryptoServiceProvider</Description>
     <Copyright>Copyright 2018</Copyright>
     <PackageLicenseUrl>https://github.com/juninhodigital/Framework.Cryptography/blob/master/LICENSE</PackageLicenseUrl>

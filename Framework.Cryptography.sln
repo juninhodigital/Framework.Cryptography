@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27703.2035
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Framework.Cryptography", "Framework.Cryptography\Framework.Cryptography.csproj", "{65D168F9-E825-4BF6-AAE3-EC47A0666E7D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Framework.Cryptography", "Framework.Cryptography\Framework.Cryptography.csproj", "{65D168F9-E825-4BF6-AAE3-EC47A0666E7D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Framework.Cryptography.UI", "Framework.Cryptography.UI\Framework.Cryptography.UI.csproj", "{F1F78926-85B2-4B88-B425-AEFD06BD1416}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{65D168F9-E825-4BF6-AAE3-EC47A0666E7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{65D168F9-E825-4BF6-AAE3-EC47A0666E7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{65D168F9-E825-4BF6-AAE3-EC47A0666E7D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1F78926-85B2-4B88-B425-AEFD06BD1416}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1F78926-85B2-4B88-B425-AEFD06BD1416}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1F78926-85B2-4B88-B425-AEFD06BD1416}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1F78926-85B2-4B88-B425-AEFD06BD1416}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
