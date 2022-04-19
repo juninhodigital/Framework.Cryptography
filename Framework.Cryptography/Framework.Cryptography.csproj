@@ -1,33 +1,27 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+
     <Authors>Jose Carlos de Jesus Junior</Authors>
-    <PackageId>Framework.Services.Cryptography</PackageId>
-    <Version>1.0.6</Version>
+    <Company>Jose Carlos de Jesus Junior</Company>
     <Description>It provides cryptography and  web config security using ProtectedConfigurationProvider/TripleDESCryptoServiceProvider</Description>
-    <Copyright>Copyright 2018</Copyright>
-    <PackageLicenseUrl>https://github.com/juninhodigital/Framework.Cryptography/blob/master/LICENSE</PackageLicenseUrl>
+    <Copyright>Copyright 2022</Copyright>
+    <Version>1.0.7</Version>
+    <PackageId>Framework.Services.Cryptography</PackageId>
     <PackageProjectUrl>https://github.com/juninhodigital/Framework.Cryptography</PackageProjectUrl>
     <PackageIconUrl>https://github.com/juninhodigital/Framework.Core/blob/master/Icons/FS_IconSmall.png?raw=true</PackageIconUrl>
-    <RepositoryType>Github</RepositoryType>
-    <PackageReleaseNotes />
+    <PackageReleaseNotes></PackageReleaseNotes>
     <PackageTags>Cryptography, Security, ProtectedConfigurationProvider, TripleDESCryptoServiceProvider</PackageTags>
-    <NeutralLanguage>en-US</NeutralLanguage>
+    <RepositoryType>Github</RepositoryType>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Product>Framework.Cryptography</Product>
-    <AssemblyVersion>1.0.2.0</AssemblyVersion>
-    <FileVersion>1.0.2.0</FileVersion>
     <RepositoryUrl>https://github.com/juninhodigital/Framework.Cryptography</RepositoryUrl>
+    <NeutralLanguage>English (United States)</NeutralLanguage>
+    
   </PropertyGroup>
 
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <Optimize>true</Optimize>
-  </PropertyGroup>
-
-  <ItemGroup>
-    <None Remove="Framework.Cryptography.nuspec" />
-  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="System.Configuration.ConfigurationManager" Version="4.5.0" />
