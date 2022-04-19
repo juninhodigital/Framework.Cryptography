@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Framework.Core;
+using System;
 using System.Windows.Forms;
 
 namespace Framework.Cryptography.UI
@@ -19,6 +20,8 @@ namespace Framework.Cryptography.UI
         {
             // Set the default encryption type
             ddlType.SelectedIndex = 1;
+
+            txtInput.Focus();
         } 
 
         #endregion
@@ -27,25 +30,59 @@ namespace Framework.Cryptography.UI
 
         private void btnEncrypt_Click(object sender, EventArgs e)
         {
-            if(ddlType.SelectedIndex==0)
+            if (IsValidInput())
             {
-                txtOutput.Text = Cryptography.EncryptUsingTripleDES(txtInput.Text);
-            }
-            else
-            {
-                txtOutput.Text = Cryptography.Encrypt(txtInput.Text, txtSecurePhrase.Text);
+                var output = string.Empty;
+
+                if (ddlType.SelectedIndex == 0)
+                {
+                    output = Cryptography.EncryptUsingTripleDES(txtInput.Text);
+                }
+                else
+                {
+                    if (IsValidSecurePhrase())
+                    {
+                        output = Cryptography.Encrypt(txtInput.Text, txtSecurePhrase.Text);
+                    }
+                }
+
+                if (output.IsNotNull())
+                {
+                    txtOutput.Text = output;
+
+                    Clipboard.SetText(output);
+
+                    MessageBox.Show("Encrypted data copied to the clipboard", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
             }
         }
 
         private void btnDecrypt_Click(object sender, EventArgs e)
         {
-            if (ddlType.SelectedIndex == 0)
+            if (IsValidInput())
             {
-                txtOutput.Text = Cryptography.DecryptUsingTripleDES(txtInput.Text);
-            }
-            else
-            {
-                txtOutput.Text = Cryptography.Decrypt(txtInput.Text, txtSecurePhrase.Text);
+                var output = string.Empty;
+
+                if (ddlType.SelectedIndex == 0)
+                {
+                    output = Cryptography.DecryptUsingTripleDES(txtInput.Text);
+                }
+                else
+                {
+                    if (IsValidSecurePhrase())
+                    {
+                        output = Cryptography.Decrypt(txtInput.Text, txtSecurePhrase.Text);
+                    }
+                }
+
+                if (output.IsNotNull())
+                {
+                    txtOutput.Text = output;
+
+                    Clipboard.SetText(output);
+
+                    MessageBox.Show("Decrypted data copied to the clipboard", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
             }
         }
 
@@ -60,15 +97,43 @@ namespace Framework.Cryptography.UI
             if(ddlType.SelectedIndex==0)
             {
                 txtSecurePhrase.Enabled = false;
-                txtSecurePhrase.Text    = "";
             }
             else
             {
                 txtSecurePhrase.Enabled = true;
-                txtSecurePhrase.Text    = "Fr@m3w0rk";
-
             }
         }
+
+        #endregion
+
+        #region| Methods |
+
+        private bool IsValidSecurePhrase()
+        {
+            errorProvider1.Clear();
+
+            if (txtSecurePhrase.Text.IsNull())
+            {
+                errorProvider1.SetError(txtSecurePhrase, "Required field");
+                return false;
+            }
+
+            return true;
+
+        }
+
+        private bool IsValidInput()
+        {
+            errorProvider1.Clear();
+
+            if (txtInput.Text.IsNull())
+            {
+                errorProvider1.SetError(txtInput, "Required field");
+                return false;
+            }
+
+            return true;
+        }    
 
         #endregion
     }
