@@ -21,7 +21,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Framework.Services.Core" Version="1.0.21" />
+    <PackageReference Include="Framework.Services.Core" Version="1.0.22" />
   </ItemGroup>
 
   <ItemGroup>
