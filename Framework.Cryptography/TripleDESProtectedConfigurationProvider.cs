@@ -46,7 +46,7 @@ namespace Framework.Cryptography
         /// </summary>
         /// <param name="node"></param>
         /// <returns></returns>
-        public override XmlNode Encrypt(XmlNode node)
+        public override XmlNode? Encrypt(XmlNode node)
         {
 
             string encryptedData = EncryptString(node.OuterXml);
@@ -56,7 +56,14 @@ namespace Framework.Cryptography
 
             xmlDoc.PreserveWhitespace = true;
             xmlDoc.LoadXml("<EncryptedData>" + encryptedData + "</EncryptedData>");
-            return xmlDoc.DocumentElement;
+
+            if(xmlDoc.DocumentElement != null) 
+            {
+                return xmlDoc.DocumentElement;
+            }
+
+            return null;
+            
         }
 
         /// <summary>
@@ -64,7 +71,7 @@ namespace Framework.Cryptography
         /// </summary>
         /// <param name="encryptedNode"></param>
         /// <returns></returns>
-        public override XmlNode Decrypt(XmlNode encryptedNode)
+        public override XmlNode? Decrypt(XmlNode encryptedNode)
         {
             string decryptedData = DecryptString(encryptedNode.InnerText);
 
@@ -74,7 +81,13 @@ namespace Framework.Cryptography
             xmlDoc.PreserveWhitespace = true;
             xmlDoc.LoadXml(decryptedData);
 
-            return xmlDoc.DocumentElement;
+            if(xmlDoc.DocumentElement != null)
+            {
+                return xmlDoc.DocumentElement;
+            }
+
+            return null;
+
         }
 
         /// <summary>
